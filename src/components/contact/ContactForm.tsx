@@ -174,10 +174,10 @@ export default function ContactForm() {
         }}
       />
       <Column style={{ alignItems: "center", marginBottom: "32px" }}>
-        <Heading style={{ marginBottom: "8px" }}>Send us a message</Heading>
+        <Heading style={{ marginBottom: "8px" }}>Send me a message</Heading>
         <Text style={{ maxWidth: "400px", textAlign: "center" }}>
-          We'd love to hear from you. Send us a message and we'll respond as
-          soon as possible.
+          I'd love to hear from you. Send me a message and I'll respond as soon
+          as possible.
         </Text>
       </Column>
       <form onSubmit={handleSubmit} noValidate style={{ width: "100%" }}>

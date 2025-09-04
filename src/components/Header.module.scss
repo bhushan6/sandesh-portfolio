@@ -12,6 +12,13 @@
   mask-size: 100% 100%;
 }
 
+.headshot {
+  position: absolute;
+  right: 10px;
+  top: 0;
+  z-index: 100;
+}
+
 @media (max-width: breakpoints.$s) {
   .position {
     top: auto !important;
@@ -21,5 +28,13 @@
   .mask {
     transform: rotate(180deg);
     bottom: 0;
+  }
+
+  .headshot {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 100;
+    display: none;
   }
 }

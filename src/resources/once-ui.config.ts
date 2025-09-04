@@ -195,6 +195,7 @@ const sameAs: SameAsConfig = {
   threads: "https://www.threads.com/@once_ui",
   linkedin: "https://www.linkedin.com/company/once-ui/",
   discord: "https://discord.com/invite/5EyAQ4eNdS",
+  instagram: "",
 };
 
 export {

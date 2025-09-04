@@ -1,16 +1,17 @@
 import { About, Home, Newsletter, Person, Social, Work } from "@/types";
 import { Line, Row, Text } from "@once-ui-system/core";
 import styles from "./content.module.scss";
+import { style } from "./once-ui.config";
 
 console.log(styles);
 
 const person: Person = {
-  firstName: "",
-  lastName: "",
-  name: `Comet`,
-  role: "Design Agency",
+  firstName: "Sandesh",
+  lastName: "Kanawade",
+  name: `Sandesh`,
+  role: "Motion Designer",
   avatar: "/images/avatar.jpg",
-  email: "comett.motion@gmail.com",
+  email: "sandeshmotions@gmail.com",
   location: "Asia/Kolkata",
   languages: ["English", "Hindi"],
 };
@@ -18,7 +19,7 @@ const person: Person = {
 const newsletter: Newsletter = {
   display: true,
   title: <>Leave your email</>,
-  description: <>We will reach out to you asap</>,
+  description: <>I will reach out to you asap</>,
 };
 
 const social: Social = [
@@ -29,16 +30,16 @@ const social: Social = [
   //   icon: "github",
   //   link: "https://github.com/once-ui-system",
   // },
-  // {
-  //   name: "LinkedIn",
-  //   icon: "linkedin",
-  //   link: "https://www.linkedin.com/company/once-ui/",
-  // },
-  // {
-  //   name: "Threads",
-  //   icon: "threads",
-  //   link: "https://www.threads.com/@once_ui",
-  // },
+  {
+    name: "LinkedIn",
+    icon: "linkedin",
+    link: "https://www.linkedin.com/in/sandesh-kanawade-3232b422b/",
+  },
+  {
+    name: "Instagram",
+    icon: "instagram",
+    link: "https://www.instagram.com/sandesh.motions?utm_source=chatgpt.com",
+  },
   {
     name: "Email",
     icon: "email",
@@ -53,37 +54,16 @@ const home: Home = {
   title: `${person.name}`,
   description: `Portfolio website showcasing work of ${person.name} ${person.role}`,
   headline: (
-    <div
-      className={styles.headingDiv}
-      // style={{
-      //   display: "flex",
-      //   flexDirection: "column",
-      //   gap: 0,
-      //   fontSize: "38px",
-      // }}
-    >
-      <span
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          // border: "1px solid red",
-          margin: 0,
-          gap: "12px",
-          flexWrap: "wrap",
-        }}
-      >
-        Hi, We are{" "}
-        <img
-          className={styles.logoGif}
-          src={
-            "https://res.cloudinary.com/dlcjorjvc/image/upload/v1756136515/gif-comet-logo-1-ezgif.com-crop_josgi9.gif"
-          }
-        />
+    <div>
+      <span>{"Hi, I'm"}</span>
+      <br />
+      <span className={styles.name}>Sandesh Kanawade</span>
+      <br />
+      <span className={styles.subheading}>
+        {"I turn complex products into simple"}
+        <br />
+        {"engaging videos"}
       </span>
-      <div className={styles.subHeadingDiv}>
-        We craft motion that shines bright.
-      </div>
     </div>
   ),
   featured: {
@@ -123,15 +103,16 @@ const about: About = {
     title: "Introduction",
     description: (
       <>
-        At Comet, we believe powerful design starts with powerful storytelling.
-        We’re a motion design studio dedicated to transforming complex ideas
-        into visually stunning, easy-to-understand stories. Whether it’s UI
-        animation, product explainers, or brand videos, our mission is to create
-        visuals that not only catch eyes but also connect with hearts. What sets
-        us apart is our blend of creativity and strategy—we don’t just animate;
-        we craft experiences that elevate your brand and leave a lasting
-        impression. With a focus on detail, clarity, and impact, every project
-        we deliver is built to shine as bright as a comet in the sky.
+        Hi, I’m Sandesh Kanawade, a Motion Designer passionate about bringing
+        ideas to life through smooth and engaging animations. I specialize in UI
+        animations, product explainers, and brand visuals that not only look
+        good but also tell a story. With a background in art and design, I blend
+        creativity with technical skills to craft animations that feel modern,
+        minimal, and impactful. My goal is simple — to help brands and digital
+        products communicate clearly, stand out, and connect with their audience
+        through motion. When I’m not designing, you’ll probably find me
+        sketching, exploring new animation styles, or sharing creative content
+        online.
       </>
     ),
   },

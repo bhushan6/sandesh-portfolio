@@ -3,11 +3,9 @@ import {
   Button,
   RevealFx,
   Column,
-  Badge,
   Row,
   Schema,
   Meta,
-  Line,
 } from "@once-ui-system/core";
 import { home, about, person, baseURL, routes } from "@/resources";
 import { Mailchimp } from "@/components";
@@ -85,7 +83,7 @@ export default function Home() {
               }}
             >
               <Row gap="8" vertical="center" paddingRight="4">
-                Contact Us
+                Contact Me
               </Row>
             </Button>
           </RevealFx>

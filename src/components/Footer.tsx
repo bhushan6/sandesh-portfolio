@@ -1,7 +1,8 @@
-import { Column, Row, Text } from "@once-ui-system/core";
-import { person } from "@/resources";
+import { Button, Column, IconButton, Row, Text } from "@once-ui-system/core";
+import { person, social } from "@/resources";
 import styles from "./Footer.module.scss";
 import { LogoHeader } from "./LogoHeader";
+import React from "react";
 
 export const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -17,6 +18,7 @@ export const Footer = () => {
           gap="16"
           vertical="center"
           horizontal="center"
+          align="center"
           s={{
             direction: "column",
             horizontal: "center",
@@ -29,6 +31,52 @@ export const Footer = () => {
             }}
             onBackground="neutral-strong"
           >
+            {social.length > 0 && (
+              <Row
+                paddingTop="20"
+                paddingBottom="8"
+                gap="8"
+                wrap
+                horizontal="center"
+                data-border="rounded"
+              >
+                {social.map(
+                  (item) =>
+                    item.link && (
+                      <React.Fragment key={item.name}>
+                        <Row s={{ hide: true }}>
+                          <Button
+                            key={item.name}
+                            href={item.link}
+                            prefixIcon={item.icon}
+                            label={item.name}
+                            size="s"
+                            weight="default"
+                            variant="secondary"
+                          />
+                        </Row>
+                        <Row hide s={{ hide: false }}>
+                          <IconButton
+                            size="l"
+                            key={`${item.name}-icon`}
+                            href={item.link}
+                            icon={item.icon}
+                            variant="secondary"
+                          />
+                        </Row>
+                      </React.Fragment>
+                    )
+                )}
+              </Row>
+            )}
+            <Text
+              style={{
+                fontSize: "16px",
+              }}
+              paddingX="4"
+            >
+              +91 9322898398
+            </Text>
             <Text
               style={{
                 fontSize: "16px",

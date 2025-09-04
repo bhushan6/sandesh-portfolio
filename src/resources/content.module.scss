@@ -1,10 +1,19 @@
 @use "../components/breakpoints.scss" as breakpoints;
 
 .headingDiv {
-  display: flex;
-  flex-direction: column;
   gap: 0;
-  font-size: 38px;
+  // font-size: 20px;
+}
+
+// style={{
+//   fontSize: "50px",
+// }}
+.name {
+  font-size: 50px;
+}
+
+.subheading {
+  font-size: 25px;
 }
 
 .logoGif {
@@ -17,10 +26,18 @@
 
 @media (max-width: breakpoints.$s) {
   .headingDiv {
-    display: flex;
-    flex-direction: column;
-    gap: 0;
-    font-size: 28px;
+    // display: flex;
+    // flex-direction: column;
+    // gap: 0;
+    // font-size: 28px;
+  }
+
+  .name {
+    font-size: 25px;
+  }
+
+  .subheading {
+    font-size: 12px;
   }
 
   .logoGif {

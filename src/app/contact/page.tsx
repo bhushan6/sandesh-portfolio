@@ -7,7 +7,7 @@ import { LogoHeader } from "@/components/LogoHeader";
 export default function Work() {
   return (
     <Column maxWidth="m" paddingTop="24">
-      <LogoHeader />
+      {/* <LogoHeader /> */}
       <Schema
         as="webPage"
         baseURL={baseURL}
