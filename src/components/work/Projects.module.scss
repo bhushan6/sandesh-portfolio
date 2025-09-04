@@ -1,0 +1,89 @@
+@use "../breakpoints.scss" as breakpoints;
+
+.hover {
+  transition: var(--transition-micro-medium);
+
+  &:hover {
+    transform: translateX(var(--static-space-8));
+
+    .indicator {
+      transform: rotate(0);
+    }
+  }
+}
+
+.grid-container {
+  display: grid;
+  // grid-template-columns: 1fr 1fr;
+  // grid-template-rows: 1fr 1fr;
+  gap: 20px;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+// Grid layouts based on number of videos
+.videos-2 {
+  grid-template-columns: 1fr 1fr;
+}
+
+.videos-3 {
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.videos-4 {
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.grid-item {
+  border-radius: 12px !important;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+  align-self: center;
+}
+
+// Special case for 3 videos layout - last video spans 2 rows
+.video-item-3-last {
+  grid-row: span 2;
+  grid-column: span 2;
+}
+
+.indicator {
+  transform: rotate(-90deg);
+  left: -2rem;
+  transition: var(--transition-micro-medium);
+}
+
+// Responsive breakpoint - override all grid layouts on small screens
+@media (max-width: breakpoints.$s) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+  }
+
+  .videos-2 {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .videos-3 {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  .videos-4 {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+  }
+
+  .video-item-3-last {
+    grid-row: span 1;
+    grid-column: span 1;
+  }
+}

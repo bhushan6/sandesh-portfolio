@@ -1,0 +1,36 @@
+@use "../components/breakpoints.scss" as breakpoints;
+
+.headingDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  font-size: 38px;
+}
+
+.logoGif {
+  margin: 0;
+  padding: 0;
+  transform: translateY(5px);
+  object-fit: cover;
+  width: 150px;
+}
+
+@media (max-width: breakpoints.$s) {
+  .headingDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    font-size: 28px;
+  }
+
+  .logoGif {
+    margin: 0;
+    padding: 0;
+    transform: translateY(3px);
+    object-fit: cover;
+    width: 125px;
+  }
+  .subHeadingDiv {
+    transform: translateY(-15px);
+  }
+}
