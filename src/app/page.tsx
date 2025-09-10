@@ -99,7 +99,7 @@ export default function Home() {
           ]}
         />
       </RevealFx>
-      <Projects
+      {/* <Projects
         heading="3D"
         videos={[
           "https://res.cloudinary.com/dlcjorjvc/video/upload/v1756560427/Lipstick_Animation_04_m8y8sw.mp4",
@@ -112,7 +112,7 @@ export default function Home() {
           "https://res.cloudinary.com/dlcjorjvc/video/upload/v1756560396/SSYouTube.online_Smith_2nd_Project_Personal_Brand_Vol_1_1080p_me277x.mp4",
           "https://res.cloudinary.com/dlcjorjvc/video/upload/v1756560393/1-mo_iy45tv.mp4",
         ]}
-      />
+      /> */}
 
       <Mailchimp />
     </Column>
