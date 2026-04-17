@@ -96,6 +96,9 @@ export default function Home() {
             "https://res.cloudinary.com/dlcjorjvc/video/upload/v1756560272/B-Comp_1_22_fmpwhm.mp4",
             "https://res.cloudinary.com/dlcjorjvc/video/upload/v1756560265/new-herd-explainer-video-max-m-1078_pflim9.mp4",
             "https://res.cloudinary.com/dlcjorjvc/video/upload/v1756560263/1-real-estate-ai-assistant-max-m-1078_zrod1j.mp4",
+            "https://cp6fapgen1tmsyey.public.blob.vercel-storage.com/main_3-webm.webm",
+            "https://cp6fapgen1tmsyey.public.blob.vercel-storage.com/2main.webm",
+            "https://cp6fapgen1tmsyey.public.blob.vercel-storage.com/WhatsApp%20Video%202026-03-15%20at%2022.12.37.webm"
           ]}
         />
       </RevealFx>
